@@ -1,7 +1,7 @@
-# NNDL_MLOps
-## Semester Project
+# Pedestrian Detection
 
-### Introduction
+## Introduction
+
 **Motive:**
 
 The primary motivation behind this project was to develop an efficient pedestrian detection system using deep learning techniques. Pedestrian detection plays a crucial role in various applications, such as autonomous vehicles, surveillance, and safety systems. The objective was to leverage transfer learning and fine-tuning of pre-trained models to create an accurate and reliable pedestrian detection system.
@@ -28,7 +28,6 @@ The pedestrian detection system developed in this project has broad applications
 
 The dataset used for this project was obtained from Kaggle and contained images of pedestrians in diverse settings. The data was preprocessed by resizing images to a uniform size (200x200 pixels) and categorizing them into two classes: "person" and "person-like." This dataset was essential for training and evaluating the pedestrian detection models. While a more comprehensive dataset with a wider range of pedestrian images could further improve model accuracy, the chosen dataset served as a strong foundation for this project.
 
-
 **Models:**
 
 Three pre-trained deep learning models were selected for transfer learning: VGG19, ResNet101, and InceptionV3. These models were chosen due to their well-documented success in image classification tasks. The models were customized with a classification head and fine-tuned on the pedestrian dataset. This transfer learning approach significantly reduced the training time and data requirements while maintaining high performance. The combination of these models with the custom classification head yielded accurate and efficient pedestrian detection models.
@@ -44,6 +43,7 @@ During detection, the Haar cascades slide over the image and apply the learned f
 In this project, Haar cascades were used in conjunction with OpenCV to detect pedestrians in video frames, producing regions of interest for further analysis. This combination of deep learning models and Haar cascades allowed for robust and accurate pedestrian detection in a real-world video scenario.
 
 **Inference:**
+
 ```python
 import cv2
 import numpy as np
