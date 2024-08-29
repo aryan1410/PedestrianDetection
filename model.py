@@ -1,24 +1,17 @@
 import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import cv2
 import os
 from xml.etree import ElementTree
-from matplotlib import pyplot as pl
 import tensorflow as tf
-from sklearn.metrics import confusion_matrix
-from tensorflow.keras import datasets, layers, models
-from keras.models import Sequential
-from keras.layers import Conv2D, MaxPooling2D, Dense, Dropout, Flatten
+from keras.layers import Dense, Dropout
 from keras.optimizers import Adam
 from keras.layers import GlobalAveragePooling2D
-from tensorflow.keras.models import Model
+from tensorflow.keras.models import Model # type: ignore
 from keras.preprocessing.image import ImageDataGenerator
 from keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
 from keras.applications import VGG19
-from tensorflow.keras.applications import InceptionV3
-from tensorflow.keras.applications.inception_v3 import preprocess_input
-from tensorflow.keras.applications import ResNet101
-from tensorflow.keras.applications.resnet import preprocess_input
+from tensorflow.keras.applications import InceptionV3 # type: ignore
+from tensorflow.keras.applications import ResNet101 # type: ignore
 keras = tf.keras
 
 class_names = ['person','person-like']
